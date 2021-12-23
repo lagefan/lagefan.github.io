@@ -15,15 +15,15 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="螺旋数 给定一个整数n，由内向外，如下为n&#x3D;13的情况，请编写程序，实现螺旋表的打印。    1.题目分析：本题的难点在于螺旋数的循环赋值，只要掌握赋值思路，代码的实现就会非常简单。这里我使用的方法是：跟踪螺旋数的循环路径，我们可以发现螺旋数的赋值遵循右-下-左-上-右-下…的行走规则，只是每次循环每个方向的赋值次数不同而已。依据这个思路，就可以完成赋值。   2.接下来开始代码的书写。首先立一个">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://github.com/lagefan/lagefan.github.io/commit/8a73a60fb3fbc17667d3c7095bb049d4131a4058#diff-251ba5824c2e281071cf54d2cfb2a03b6b5ff2061e6da6a8eeffebe748393d1c">
-<meta property="og:image" content="https://github.com/lagefan/lagefan.github.io/commit/8a73a60fb3fbc17667d3c7095bb049d4131a4058#diff-d3b0b4fa928611cc76359c56bba36b1ede885a3d434f8fd0561ac1c3b147f080">
-<meta property="og:image" content="https://github.com/lagefan/lagefan.github.io/commit/8a73a60fb3fbc17667d3c7095bb049d4131a4058#diff-099b97011e76a8efc875621e91ba132ee4afff8913ce773abc8b3e82c9560246">
-<meta property="og:image" content="https://github.com/lagefan/lagefan.github.io/commit/8a73a60fb3fbc17667d3c7095bb049d4131a4058#diff-2c7d2a015cb2e118cc954acb12b72a9f247cefd7ffeac7283ddc910b6c54ddff">
+<meta property="og:image" content="https://github.com/lagefan/lagefan.github.io/blob/master/spiralnumbertitle.png">
+<meta property="og:image" content="https://github.com/lagefan/lagefan.github.io/blob/master/spiral-1.png">
+<meta property="og:image" content="https://github.com/lagefan/lagefan.github.io/blob/master/spiral-2.png">
+<meta property="og:image" content="https://github.com/lagefan/lagefan.github.io/blob/master/spiral-3.png">
 <meta property="article:published_time" content="2021-12-23T07:16:22.000Z">
-<meta property="article:modified_time" content="2021-12-23T08:41:41.525Z">
+<meta property="article:modified_time" content="2021-12-23T09:37:11.504Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/lagefan/lagefan.github.io/commit/8a73a60fb3fbc17667d3c7095bb049d4131a4058#diff-251ba5824c2e281071cf54d2cfb2a03b6b5ff2061e6da6a8eeffebe748393d1c">
+<meta name="twitter:image" content="https://github.com/lagefan/lagefan.github.io/blob/master/spiralnumbertitle.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -185,12 +185,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="螺旋数"><a href="#螺旋数" class="headerlink" title="螺旋数"></a>螺旋数</h1><blockquote>
-<p>给定一个整数n，由内向外，如下为n=13的情况，请编写程序，实现螺旋表的打印。<br><img src="https://github.com/lagefan/lagefan.github.io/commit/8a73a60fb3fbc17667d3c7095bb049d4131a4058#diff-251ba5824c2e281071cf54d2cfb2a03b6b5ff2061e6da6a8eeffebe748393d1c" alt="螺旋表"></p>
+<p>给定一个整数n，由内向外，如下为n=13的情况，请编写程序，实现螺旋表的打印。<br><img src="https://github.com/lagefan/lagefan.github.io/blob/master/spiralnumbertitle.png" alt="螺旋表"></p>
 </blockquote>
 <p>  1.题目分析：本题的难点在于螺旋数的循环赋值，只要掌握赋值思路，代码的实现就会非常简单。这里我使用的方法是：跟踪螺旋数的循环路径，我们可以发现螺旋数的赋值遵循右-下-左-上-右-下…的行走规则，只是每次循环每个方向的赋值次数不同而已。依据这个思路，就可以完成赋值。</p>
-<p>  2.接下来开始代码的书写。首先立一个动态申请的二维数组，并赋值为0，便于后续判断方向。<br>  <img src="https://github.com/lagefan/lagefan.github.io/commit/8a73a60fb3fbc17667d3c7095bb049d4131a4058#diff-d3b0b4fa928611cc76359c56bba36b1ede885a3d434f8fd0561ac1c3b147f080" alt="动态申请二维数组"></p>
-<p>3.第二步，判断n在二维数组中的起始位置。并用上述思路书写代码。<br><img src="https://github.com/lagefan/lagefan.github.io/commit/8a73a60fb3fbc17667d3c7095bb049d4131a4058#diff-099b97011e76a8efc875621e91ba132ee4afff8913ce773abc8b3e82c9560246" alt="赋值"></p>
-<p>4.最后，利用for循环打印数组。在堆区释放创建的数据。<br><img src="https://github.com/lagefan/lagefan.github.io/commit/8a73a60fb3fbc17667d3c7095bb049d4131a4058#diff-2c7d2a015cb2e118cc954acb12b72a9f247cefd7ffeac7283ddc910b6c54ddff" alt="打印数组"></p>
+<p>  2.接下来开始代码的书写。首先立一个动态申请的二维数组，并赋值为0，便于后续判断方向。<br>  <img src="https://github.com/lagefan/lagefan.github.io/blob/master/spiral-1.png" alt="动态申请二维数组"></p>
+<p>3.第二步，判断n在二维数组中的起始位置。并用上述思路书写代码。<br><img src="https://github.com/lagefan/lagefan.github.io/blob/master/spiral-2.png" alt="赋值"></p>
+<p>4.最后，利用for循环打印数组。在堆区释放创建的数据。<br><img src="https://github.com/lagefan/lagefan.github.io/blob/master/spiral-3.png" alt="打印数组"></p>
 <blockquote>
 <p>小结：做题过程中，我找了很多思路，上述只是我认为好理解的一种。如果想了解更多，请查看<a target="_blank" rel="noopener" href="https://blog.csdn.net/nought03/article/details/39814195">螺旋数打印系列汇总</a>。个人认为写的较详细。</p>
 </blockquote>

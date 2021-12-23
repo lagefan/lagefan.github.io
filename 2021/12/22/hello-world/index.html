@@ -16,8 +16,9 @@
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-12-22T09:42:29.202Z">
-<meta property="article:modified_time" content="2021-12-22T09:42:29.202Z">
+<meta property="article:modified_time" content="2021-12-23T07:13:24.700Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="essay">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -59,7 +60,9 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/tags/essay">随笔</a></li>
+	        
+				<li><a href="/categories/cplusplus">C++学习日志</a></li>
 	        
 			</ul>
 		</nav>
@@ -118,6 +121,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -133,12 +138,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/essay">随笔</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/categories/cplusplus">C++学习日志</a></li>
 		        
 				</ul>
 			</nav>
@@ -215,7 +222,29 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">essay</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/cplusplus//" class="article-tag-list-link color5">cplusplus</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -408,6 +437,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">essay</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>

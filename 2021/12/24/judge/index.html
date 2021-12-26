@@ -15,14 +15,14 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="参赛推理">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2021/12/24/judge/img/judge-1.png">
-<meta property="og:image" content="http://example.com/2021/12/24/judge/img/judge-2.png">
-<meta property="og:image" content="http://example.com/2021/12/24/judge/img/judge-3.png">
+<meta property="og:image" content="http://example.com/img/judge-1.png">
+<meta property="og:image" content="http://example.com/img/judge-2.png">
+<meta property="og:image" content="http://example.com/img/judge-3.png">
 <meta property="article:published_time" content="2021-12-24T13:51:02.000Z">
-<meta property="article:modified_time" content="2021-12-24T14:33:38.751Z">
+<meta property="article:modified_time" content="2021-12-26T13:19:15.200Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/12/24/judge/img/judge-1.png">
+<meta name="twitter:image" content="http://example.com/img/judge-1.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -188,9 +188,9 @@
 <p>A,B,C,D,E五名同学可能参加计算机竞赛，根据以下条件判断哪些人参加了竞赛：<br>   1.A参加时，B也参加<br>   2.B和C只有一个人参加<br>   3.C和D或者都参加，或者都不参加<br>   4.D和E中至少有一个人参加<br>   5.如果E参加，那么A和D也都参加<br>最终输出结果。</p>
 </blockquote>
 <p>1.题目分析：这道题有很多解法，我自己想的这种方法理解简单但空间复杂度和时间复杂度都较高。思路很简单：用0和1表示同学是否参加竞赛，然后用该表示方法表示出所有可能的情况，最后，将所有情况循环经过一个条件判断组，最终满足所有条件的情况将被输出。话不多说，直接看代码。  </p>
-<p>2.首先是条件组的表达：<br><img src="img/judge-1.png" alt="tiaojianzu"></p>
-<p>3.然后是所有情况的表达：<br><img src="img/judge-2.png" alt="qingkuang"></p>
-<p>4.然后是结果的输出：<br><img src="img/judge-3.png" alt="jieguo"></p>
+<p>2.首先是条件组的表达：<br><img src="/img/judge-1.png" alt="tiaojianzu"></p>
+<p>3.然后是所有情况的表达：<br><img src="/img/judge-2.png" alt="qingkuang"></p>
+<p>4.然后是结果的输出：<br><img src="/img/judge-3.png" alt="jieguo"></p>
 <p>5.最后将上述所有代码块集成即可。</p>
 <p>小结：这种方法思路简单，但缺陷也很明显：条件的输入极其麻烦。如果后续有闲暇时间，我会进行优化。</p>
 <pre><code>**如果你认为我的博客内容有用，请点击左侧的github链接，给我一个小star。谢谢。**

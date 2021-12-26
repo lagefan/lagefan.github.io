@@ -15,15 +15,15 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="猜字小游戏">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2021/12/24/numbergame/img/numbergame-1.png">
-<meta property="og:image" content="http://example.com/2021/12/24/numbergame/img/numbergame-2.png">
-<meta property="og:image" content="http://example.com/2021/12/24/numbergame/img/number-3.png">
-<meta property="og:image" content="http://example.com/2021/12/24/numbergame/img/number-4.png">
+<meta property="og:image" content="http://example.com/img/numbergame-1.png">
+<meta property="og:image" content="http://example.com/img/numbergame-2.png">
+<meta property="og:image" content="http://example.com/img/number-3.png">
+<meta property="og:image" content="http://example.com/img/number-4.png">
 <meta property="article:published_time" content="2021-12-24T13:51:37.000Z">
-<meta property="article:modified_time" content="2021-12-24T14:59:25.029Z">
+<meta property="article:modified_time" content="2021-12-26T13:18:56.230Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/12/24/numbergame/img/numbergame-1.png">
+<meta name="twitter:image" content="http://example.com/img/numbergame-1.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -188,10 +188,10 @@
 <blockquote>
 <p>设计实现一个猜数字的小游戏。<br>游戏开始时在程序内部随机生成一个 4 位数字（每一位上的值不同，例如 3795），用户<br>通过若干轮的尝试试图猜出该数字，猜测次数不能超过 8 次，第八次如果仍未猜对则提示用<br>户下次继续努力，程序退出。每一轮猜测过程包括：<br>（1）用户输入一个猜测的四位数字，每一位值不同，例如输入 3456；<br>（2）程序比较用户输入的数字和程序内部随机生成的数字，如果值对位置也对则计数<br>变量 A 累加，如果值对但位置不对则一个计数变量 B 累加。<br>（3）输出 A 和 B 的累加信息以提示用户后续的猜测，例如输入 3456，则输出 1A1B；<br>输入 1268，则输出 0A0B；输入 5973，则提示 0A4B；输入 3795，则提示猜测成功。<br>要求用类来实现该小游戏，建立 CGame 类，提供游戏初始化、获取历次、比对当次输<br>入结果等函数；要求在主函数上完成输入输出，CGame 类只提供游戏状态（答案、步数、历史猜测和比较结果）管理及计算的功能。</p>
 </blockquote>
-<p>1.题目分析：很明显，这道题的目的是考察类的使用（毕竟面向对象编程是C++的最大特色之一）。其实这道题的思路也很简单，毕竟题头已经给出了类内的内容，相当于已经搭建了框架，我们补充内容，最后集成即可。下图是我写的class类。<br><img src="img/numbergame-1.png" alt="class"></p>
-<p>2.首先我先写了构造函数对计数器和判断数进行初始化。change函数是将用户输入的数字进行存储到类内，方便后续的比较操作。<br><img src="img/numbergame-2.png" alt="change"></p>
-<p>3.然后是将用户输入的数字与随机生成的数进行比对，并对题目中要求的A和B进行赋值操作，顺便对计数器进行更新，这在判断程序的停止时会有大用。<br><img src="img/number-3.png" alt="guess"></p>
-<p>4.最后的两个函数就好理解了，分别是判断程序的停止和程序的运行函数。这里就不再过多解释。<br><img src="img/number-4.png" alt="out"></p>
+<p>1.题目分析：很明显，这道题的目的是考察类的使用（毕竟面向对象编程是C++的最大特色之一）。其实这道题的思路也很简单，毕竟题头已经给出了类内的内容，相当于已经搭建了框架，我们补充内容，最后集成即可。下图是我写的class类。<br><img src="/img/numbergame-1.png" alt="class"></p>
+<p>2.首先我先写了构造函数对计数器和判断数进行初始化。change函数是将用户输入的数字进行存储到类内，方便后续的比较操作。<br><img src="/img/numbergame-2.png" alt="change"></p>
+<p>3.然后是将用户输入的数字与随机生成的数进行比对，并对题目中要求的A和B进行赋值操作，顺便对计数器进行更新，这在判断程序的停止时会有大用。<br><img src="/img/number-3.png" alt="guess"></p>
+<p>4.最后的两个函数就好理解了，分别是判断程序的停止和程序的运行函数。这里就不再过多解释。<br><img src="/img/number-4.png" alt="out"></p>
 <blockquote>
 <p>小结：没啥好说的，思路清晰，写就完事了。如果你有更好的优化方案，欢迎通过QQ联系我。</p>
 </blockquote>

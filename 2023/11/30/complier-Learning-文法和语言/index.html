@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>文法和语言 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="引子一个程序设计语言是一个记号系统，它的完整定义应包括语法和语义两个方面。一个语言的语法是指一组规则，用它可以形成和产生一个合适的程序。目前广泛使用的手段是上下文无关文法。语法只是定义什么样的符号序列是合法的，与这些符号的含义毫无关系。判定语言是否符合逻辑，是属于语义分析的工作。程序设计语言的语义分为两类：静态语义和动态语义。静态语义是一系列限定规则，并确定哪些合乎语法的程序是合适的。动态语义称作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文法和语言">
+<meta property="og:url" content="http://example.com/2023/11/30/complier-Learning-%E6%96%87%E6%B3%95%E5%92%8C%E8%AF%AD%E8%A8%80/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="引子一个程序设计语言是一个记号系统，它的完整定义应包括语法和语义两个方面。一个语言的语法是指一组规则，用它可以形成和产生一个合适的程序。目前广泛使用的手段是上下文无关文法。语法只是定义什么样的符号序列是合法的，与这些符号的含义毫无关系。判定语言是否符合逻辑，是属于语义分析的工作。程序设计语言的语义分为两类：静态语义和动态语义。静态语义是一系列限定规则，并确定哪些合乎语法的程序是合适的。动态语义称作">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-11-30T12:04:11.000Z">
+<meta property="article:modified_time" content="2023-12-04T12:53:16.371Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="complier">
+<meta property="article:tag" content="文法概念">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-complier-Learning-文法和语言" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/11/30/complier-Learning-%E6%96%87%E6%B3%95%E5%92%8C%E8%AF%AD%E8%A8%80/" class="article-date">
+  <time class="dt-published" datetime="2023-11-30T12:04:11.000Z" itemprop="datePublished">2023-11-30</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/complier/">complier</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      文法和语言
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子<br></h1><p>一个程序设计语言是一个记号系统，它的完整定义应包括语法和语义两个方面。<br><br><br>一个语言的语法是指一组规则，用它可以形成和产生一个合适的程序。目前广泛使用的手段是上下文无关文法。语法只是定义什么样的符号序列是合法的，与这些符号的含义毫无关系。<br><br><br>判定语言是否符合逻辑，是属于语义分析的工作。程序设计语言的语义分为两类：静态语义和动态语义。<br><br><br>静态语义是一系列限定规则，并确定哪些合乎语法的程序是合适的。<br><br><br>动态语义称作运行语义或执行语义，表明程序要做什么，要计算什么<br><br><br>阐明语法的工具是文法，阐明语义要更困难，目前仍没有一种公认的形式系统可以自动构造正确的编译系统，故不再介绍形式语义学。<br><br></p>
+<h1 id="文法之前-符号和符号串"><a href="#文法之前-符号和符号串" class="headerlink" title="文法之前-符号和符号串"></a>文法之前-符号和符号串<br></h1><p><strong>字母表</strong>，是元素的非空有穷集合。字母表中的元素又可称为符号，因此字母表也称为符号集。<br><br><br>举个例子，C语言的字母表由字母、数字、若干专用符号及char、struct、if、do之类的保留字组成。<br><br><br><strong>符号串</strong>，由字母表中的符号组成的任何有穷序列称为符号串。<br><br><br>举个例子，001110是字母表Σ&#x3D;{0，1}上的符号串。<br><br><br>如果某符号串x中有m个符号，称其长度为m，表示为|x|&#x3D;m。<br><br><br>空符号串用ε表示，|ε|&#x3D;0。<br><br><br>当我们只对符号z&#x3D;xy的头感兴趣，可以采用省略写法：z&#x3D;x···；如果只是为了强调x在符号串某处出现，可表示为z&#x3D;···x···。<br><br><br><strong>符号串的连接</strong><br><br>设x&#x3D;ST，y&#x3D;abu，他们的连接为xy&#x3D;STabu。其中|x|&#x3D;2，|y|&#x3D;3，|xy|&#x3D;5。<br><br><br><strong>符号串的方幂</strong><br><br>设x是符号串，把x自身连接n次得到符号串z，z&#x3D;xxx···xxx，称为符号串的方幂。写作$z^n$。<br><br><br><strong>符号串集合</strong><br><br>若集合A中的一切元素都是某字母表上的符号串，则称A为该字母表上的符号串集合。<br><br><br>两个符号串集合A和B的乘积定义如下$AB&#x3D;{xy|x∈A且y∈B}$。<br><br><br>指定字母表Σ之后，可用$Σ^*$表示Σ上所有有穷长的串的集合。并称之为集合Σ的闭包。可以用字母表的方幂形式来表示：$Σ^*&#x3D;Σ^0∪Σ^1∪Σ^2···Σ^n···$。<br><br><br>举个例子，如Σ&#x3D;{0，1}，则$Σ^*&#x3D;{ε，0，1，00，01，10，11，000，001，010···}$。<br><br><br>而$Σ^+$称为Σ的正闭包。且$Σ^+&#x3D;Σ^1∪Σ^2···Σ^n···$。显然有$Σ^*&#x3D;Σ^0∪Σ^+$和$Σ^+&#x3D;ΣΣ^*&#x3D;Σ^*Σ$。<br><br></p>
+<h1 id="文法和语言的形式化定义"><a href="#文法和语言的形式化定义" class="headerlink" title="文法和语言的形式化定义"></a>文法和语言的形式化定义<br></h1><p><strong>规则</strong>，也可以称为产生式、生成式，是形如α-&gt;β或α::&#x3D;β的有序对。其中α称为规则的左部，β称为规则的右部。这里的::&#x3D;读作“定义为”。<br><br><br><em><em>文法定义为四元组($V_N,V_T,P,S$)<em><em>。其中$V_N$是非终结符号集；$V_T$是终结符集；P为规则（α-&gt;β）的集合，$α∈(V_N∪V_T)^</em>$且至少包含一个非终结符，$β∈(V_N∪V_T)^</em>$;$V_N,V_T和P$是非空有穷集。S称作识别符或开始符，他是一个非终结符，至少要在一条规则中作为左部出现。<br><br><br>$V_N和V_T$不含公共的元素，即$V_N∩V_T&#x3D;\varnothing$。通常用V表示$V_N∪V_T$,V称为文法G的字母表或字汇表。<br><br><br><strong>推导</strong>,定义了$V^</em>$中的符号之间的关系。包括直接推导$\Rightarrow$、长度为n(n&gt;&#x3D;1)的推导$\overset{+}{\Rightarrow}$和长度为n(n&gt;&#x3D;0)的推导$\overset{*}{\Rightarrow}$。接下来仅给出直接推导的形式化定义。<br><br><br>设$\alpha\rightarrow\beta$是文法G&#x3D;($V_N,V_T,P,S$)的规则，$\gamma和\delta$是$V^</em>$中的任意符号，若有符号串满足$v&#x3D;\gamma\alpha\delta,w&#x3D;\gamma\beta\delta$，则说v应用规则$\alpha\rightarrow\beta$直接产生w，或说w是v的直接推导。记作$v\Rightarrow w$。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/11/30/complier-Learning-%E6%96%87%E6%B3%95%E5%92%8C%E8%AF%AD%E8%A8%80/" data-id="clpqwyls00004u8tuhrdxeln1" data-title="文法和语言" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/complier/" rel="tag">complier</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%96%87%E6%B3%95%E6%A6%82%E5%BF%B5/" rel="tag">文法概念</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/11/30/complier-Learning-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">自顶向下语法分析</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/GAME/">GAME</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/GAME/OpenGL/">OpenGL</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/complier/">complier</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GAME/" rel="tag">GAME</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenGL/" rel="tag">OpenGL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/complier/" rel="tag">complier</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%96%87%E6%B3%95%E6%A6%82%E5%BF%B5/" rel="tag">文法概念</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/GAME/" style="font-size: 10px;">GAME</a> <a href="/tags/OpenGL/" style="font-size: 10px;">OpenGL</a> <a href="/tags/complier/" style="font-size: 20px;">complier</a> <a href="/tags/%E6%96%87%E6%B3%95%E6%A6%82%E5%BF%B5/" style="font-size: 10px;">文法概念</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/11/">November 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/11/30/complier-Learning-%E6%96%87%E6%B3%95%E5%92%8C%E8%AF%AD%E8%A8%80/">文法和语言</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/30/complier-Learning-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90/">自顶向下语法分析</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/29/GAME-OpenGL-Learn-1/">GAME_OpenGL_Learn_1</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/29/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

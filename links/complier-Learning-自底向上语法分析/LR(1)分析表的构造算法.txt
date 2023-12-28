@@ -1,0 +1,8 @@
+若已构造出某文法的LR(1)项目集族C={$I_0,I_1,...,I_n$}，其中$I_k$的k为分析器的状态。
+ACTION表和GOTO表构造方法：
+对DFA中的每个项目和状态转换函数做如下分析：
+- 若项目[$A\rightarrow\alpha ·a\beta ,b$]属于$I_k$，且$GO(I_k,a)=I_j$，其中a∈$V_T$，则置ACTION[k,a]=$S_j$。
+- 若项目[$A\rightarrow\alpha ·,a$]属于$I_k$，则置ACTION[k,a]=$r_j$。
+- 若$GO(I_k,A)=I_j$，其中A∈$V_N$，则置GOTO[k,A]=j。
+- 若项目[$S'\rightarrow S·,#$]属于$I_k$，则置ACTION[k,#]=acc。
+- 对于不能用上述四条规则填入分析表的元素，置报错标志。

@@ -1,0 +1,13 @@
+1、如果I是文法G'的一个项目集，定义和构造I的闭包CLOSURE(I)的步骤：
+- I的项目均在CLOSURE(I)中。
+- 若$A\rightarrow\alpha ·B\beta$属于CLOSURE(I)，则每一个形如$B\rightarrow ·\gamma$的项目也属于CLOSURE(I)。
+- 重复2直到不会出现新的项目。
+2、定义转换函数GO(I,X)如下：
+GO(I,X)=CLOSURE(J)
+其中，I为包含某一项目集的状态。
+X为一文法符号，X∈$V_N∪V_T$。
+J={任何形如$A\rightarrow\alpha X·\beta$的项目|$A\rightarrow\alpha ·X\beta$∈I}。
+3、使用闭包函数CLOSURE和转换函数GO(I,X)构造文法G'的LR(0)项目集规范族：
+- 置项目$S'\rightarrow ·S$为初态集的核，然后对核求闭包，即CLOSURE({$S'\rightarrow ·S$})，得到初态的项目集。
+- 对初态集或其他构造的项目集，应用转换函数GO(I,X)=CLOSURE(J)求出新状态J的项目集。
+- 重复第2步直到不会出现新的项目集。

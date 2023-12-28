@@ -1,0 +1,13 @@
+1、构造LR(1)项目集的闭包函数：
+- 假定I是一个项目集，I中的任何项目都属于CLOSURE(I)
+- 如果有项目$A\rightarrow\alpha ·B\beta,a$属于CLOSURE(I)，$B\rightarrow\gamma$是文法中的产生式，$\beta ∈V^*$，$b ∈FIRST(\beta\alpha)$，则$B\rightarrow ·\gamma,b$也属于CLOSURE(I)。
+- 重复第二步直到CLOSURE(I)不再增大。
+2、构造LR(1)的转换函数：
+GO(I,X)=CLOSURE(J)
+其中，I式LR(1)的项目集。
+X是文法符号。
+J={任何形如[$A\rightarrow\alpha X·\beta ,a$]的项目|[$A\rightarrow\alpha ·X\beta ,a$]∈I}
+3、使用闭包函数和转换函数对构造文法G'的LR(1)项目集规范族：
+- 将$S'\rightarrow ·S,#$置为初态集的核，对核求闭包，得到初态的项目集。
+- 对初态集或其他构造的项目集，应用转换函数GO(I,X)=CLOSURE(J)求出新状态J的项目集。
+- 重复第2步直到不会出现新的项目集。

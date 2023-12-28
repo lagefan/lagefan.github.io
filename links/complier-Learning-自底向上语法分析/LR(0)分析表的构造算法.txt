@@ -1,0 +1,8 @@
+假设：
+已构造出LR(0)项目集规范族为C={$I_0,I_1,···,I_n$}。其中$I_k$为项目集的名字，k为状态名。
+1、令包含$S'\rightarrow S$项目的集合$I_k$的下标k为分析器的初始状态。
+2、对DFA中的每个项目和状态转换函数做如下分析：
+- 若项目$A\rightarrow\alpha ·a\beta$属于$I_k$且转换函数$GO(I_k,a)=I_j$，当a为终结符时置ACTION[k,a]为$S_j$。
+- 若项目$A\rightarrow\alpha ·$属于$I_k$，则对任何终结符a和#置ACTION[k,a]和ACTION[k,#]为$r_j$。其中j为文法G'中产生式$A\rightarrow\alpha$的序号。
+- 若$GO(I_k,A)=I_j$，则置GOTO[k,A]为j。
+- 若项目$S'\rightarrow S·$，属于$I_k$，则置ACTION[k,#]为acc，表示接收。
